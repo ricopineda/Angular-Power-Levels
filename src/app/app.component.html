@@ -1,0 +1,38 @@
+
+
+
+
+<div class="wrapper">
+  <h3> Power Component </h3>
+  <form (submit)="onSubmit()">
+  Initial Power Level: <input type="number" name="number" min="0" max="100" step="1" value="0" [(ngModel)]="power"> 
+  <input type="submit" name="submit">
+  </form>
+  <div class="powers">
+    <h4> Human Component </h4>
+    <h5> Power Level: <app-human [power]="power"></app-human> </h5>
+  </div>
+  <div class="powers">
+    <h4> Saiyan Component </h4>
+    <h5> Power Level: <app-saiyan [power]="power"></app-saiyan> </h5>
+  </div>
+  <div class="powers">
+    <h4> SS Component </h4>
+    <h5> Power Level: <app-super-saiyan [power]="power"></app-super-saiyan> </h5>
+  </div>
+  <div class="powers">
+    <h4> SS Two Component </h4>
+    <h5> Power Level: <app-super-saiyan-two [power]="power"></app-super-saiyan-two> </h5>
+  </div>
+  <div class="powers">
+    <h4> SS God Component </h4>
+    <h5> Power Level:  <app-super-saiyan-god [power]="power"></app-super-saiyan-god> </h5>
+  </div>
+  <div class="powers">
+    <h4> SS Blue Component </h4>
+    <h5> Power Level: <app-super-saiyan-blue [power]="power"></app-super-saiyan-blue> </h5>
+  </div>
+</div>
+
+
+
